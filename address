@@ -9,19 +9,18 @@ print("Who's address do you demand? -> ")
 REF = input()
 
 n = 0
+cnt = 1
 
 for i in range (4):
-    if (REF == data_name[n]):
+    if (REF != data_name[n]):
+        n+=1
+        cnt+=1
+        if (cnt == 5):
+            print("NOT FOUND, TRY OTHER NAME")
+
+    else:
         print("\nE-mail address: ")
         print(data_add[n])
 
         break
-
-    elif(n==4):
-        print("NOT FOUND, TRY OTHER NAME")
  
-    else:
-        n+=1
-
-
-
