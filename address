@@ -5,11 +5,10 @@
 data_name = ["SUZUKI","NAKAJI","HIRANO","KIKUTI"]
 data_add = ["ruiszk@usomail.rs","ismooo@ramen.ff","butter@fly.dm","kikut@notrelated.cit"]
 
-print("Who's address do you demand? -> ")
-REF = input()
-
 n = 0
 cnt = 1
+
+REF=input()
 
 for i in range (4):
     if (REF != data_name[n]):
@@ -19,8 +18,7 @@ for i in range (4):
             print("NOT FOUND, TRY OTHER NAME")
 
     else:
-        print("\nE-mail address: ")
-        print(data_add[n])
+        print("E-mail address: ",data_add[n])
 
         break
  
