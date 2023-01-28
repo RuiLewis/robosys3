@@ -14,15 +14,22 @@ KIKUTI 012-(3456)-7890 kikut@notrelated.cit
 
 address = re.findall(r'(\S+)\s+([\()\d-]+)\s+([\w.-_]+@[\w.-_]+)',data)
 
-print('NAME')
-for item in address:
-	print(item[0])
+print("Who's address do you demand? -> ")
+REF = input()
 
-print('\nPHONE NUMBER')
 for item in address:
-	print(item[1])
+    if (REF == item[0]):
+        print("\nNAME:")
+        print(item[0])
+        print("\n\nPhone number:")
+        print(item[1])
+        print("\n\nE-mail address:")
+        print(item[2])
 
-print('\nEmail')
-for item in address:
-	print(item[2])
+        break
+
+    else:
+        print("NOT FOUND, TRY OTHER NAME")
+
+        break
 
