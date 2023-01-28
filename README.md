@@ -11,10 +11,10 @@
 ### インストール
 * 下記の手順に従う
 
-      * $ git clone https://github.com/RuiLewis/robosys3.git
-      * $ cd robosys3
-      * $ make
-      * $ sudo make install
+ * $ git clone https://github.com/RuiLewis/robosys3.git
+ * $ cd robosys3
+ * $ make
+ * $ sudo make install
 
 ### クイックトライアル
      * :~$ cd ~/robosys3
