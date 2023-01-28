@@ -1,0 +1,16 @@
+#!/bin/bash -xv
+#SPDX-FileCopyrightText: 2023 Rui Suzuki
+#SPDX-License -Identifier: BSD-3-Clause
+
+ng(){
+	echo Error at line $1
+	res=1
+}
+
+res=0
+
+${out}=$( echo SUZUKI | ./address )
+
+[ "${out}"="E-mail address:  ruiszk@usomail.rs" ] || ng $LINENO
+
+exit $res
