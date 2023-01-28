@@ -2,34 +2,26 @@
 # SPDX-FileCopyrightText: 2023 Rui Suzuki
 # SPDX-License=Identifier: BSD-3-Clause
 
-import sys
-import re
-
-data = '''
-SUZUKI 080-(1111)-2222 ruiszk@usomail.jp
-NAKAJI 090-(5555)-4444 nakji@tobiuo.ff
-HIRANO 070-(3333)-6666 kiyohiko@butter.fly
-KIKUTI 012-(3456)-7890 kikut@notrelated.cit
-'''
-
-address = re.findall(r'(\S+)\s+([\()\d-]+)\s+([\w.-_]+@[\w.-_]+)',data)
+data_name = ["SUZUKI","NAKAJI","HIRANO","KIKUTI"]
+data_add = ["ruiszk@usomail.rs","ismooo@ramen.ff","butter@fly.dm","kikut@notrelated.cit"]
 
 print("Who's address do you demand? -> ")
 REF = input()
 
-for item in address:
-    if (REF == item[0]):
-        print("\nNAME:")
-        print(item[0])
-        print("\n\nPhone number:")
-        print(item[1])
-        print("\n\nE-mail address:")
-        print(item[2])
+n = 0
+
+for i in range (4):
+    if (REF == data_name[n]):
+        print("\nE-mail address: ")
+        print(data_add[n])
 
         break
 
-    else:
+    elif(n==4):
         print("NOT FOUND, TRY OTHER NAME")
+ 
+    else:
+        n+=1
 
-        break
+
 
