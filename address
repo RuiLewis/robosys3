@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Rui Suzuki
+# SPDX-License=Identifier: BSD-3-Clause
+
+import sys
+import re
+
+data = '''
+SUZUKI 080-(1111)-2222 ruiszk@usomail.jp
+NAKAJI 090-(5555)-4444 nakji@tobiuo.ff
+HIRANO 070-(3333)-6666 kiyohiko@butter.fly
+KIKUTI 012-(3456)-7890 kikut@notrelated.cit
+'''
+
+address = re.findall(r'(\S+)\s+([\()\d-]+)\s+([\w.-_]+@[\w.-_]+)',data)
+
+print('NAME')
+for item in address:
+	print(item[0])
+
+print('\nPHONE NUMBER')
+for item in address:
+	print(item[1])
+
+print('\nEmail')
+for item in address:
+	print(item[2])
+
