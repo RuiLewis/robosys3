@@ -16,6 +16,11 @@
       * $ make
       * $ sudo make install
 
+### クイックトライアル
+     * :~$ cd ~/robosys3
+     * :~/robosys3$ echo SUZUKI | ./address
+     * E-mail address:  ruiszk@usomail.rs
+
 ### 推奨環境
 * Python 3.7 ~ 3.10
 
