@@ -25,14 +25,13 @@
 * Python 3.7 ~ 3.10
 
 ### テスト実行環境
-* ubuntu22.04 LTS
+* ubuntu22.04.1 LTS
 
 # ライセンス
 BSD3条項ライセンス適用．詳細はLICENSEを参照．
 
 # 権利関係・謝辞
-* 本プログラムで行われたテストプログラムは千葉工業大学准教授上田隆一先生が講義「ロボットシステム学2022」において使用されたコードを参考とした．以下にその講義資料を掲載する．
-（https://ryuichiueda.github.io/my_slides/robosys_2022/lesson7.html）
+* 本プログラムで行われたテストプログラムは千葉工業大学准教授上田隆一先生が講義「ロボットシステム学2022」において使用されたコードを参考とした．以下にその講義動画を掲載する．
 （https://www.youtube.com/watch?v=9HPLMhKvecY&list=PLbUh9y6MXvjeM-lT7UoHix3zxxa6M5Jui&index=7）
 * このREADME.mdはマークダウン方式で記述された．
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
